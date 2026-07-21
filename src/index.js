@@ -23,5 +23,8 @@ commandHandler(client);
 // Load Events
 eventHandler(client);
 
+console.log("TOKEN exists:", !!process.env.TOKEN);
+console.log("TOKEN length:", process.env.TOKEN?.length);
+
 // Login
 client.login(process.env.TOKEN);
